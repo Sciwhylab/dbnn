@@ -59,5 +59,20 @@ F′<sub>i</sub> = F<sub>i</sub> • (Z ∗ σ + μ) ...(3)
 Z = [z<sub>ik</sub>] ∀ k = 1..n; σ = [σ<sub>ij</sub>] ∀ j = 1..m; μ = [<sub>μij</sub>] ∀ j = 1..m
 
 
+## How to use DBNN in your Neural Network
+
+This version of DBNN has been implemented in pytorch.
+While implementing your neural network, the Linear class from dbnn-linear.py can be called instead of the default Linear class of pytorch library.
+
+## Example:
+
+### Build the PyTorch model using the functional API of DBNN.
+input_layer = Linear(input_size, hidden_size)
+act_layer = torch.nn.Tanh()
+dense_layer = Linear(hidden_size, num_classes)
+output_layer = torch.nn.Softmax(2)
+
+Here Linear(..) will automatically call DBNN Linear class instead of pytorch Linear class.
+
 ### Cite our work:
 Vinayak, N., Ahmad, S. (2023). A Reduced-Memory Multi-layer Perceptron with Systematic Network Weights Generated and Trained Through Distribution Hyper-parameters. In: Sharma, H., Shrivastava, V., Bharti, K.K., Wang, L. (eds) Communication and Intelligent Systems. ICCIS 2022. Lecture Notes in Networks and Systems, vol 689. Springer, Singapore. https://doi.org/10.1007/978-981-99-2322-9_41
