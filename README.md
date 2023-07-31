@@ -30,7 +30,7 @@ see that the number of parameters for this layer combination is:
 
 **DBNN: m ∗ 2 (for a distribution with 2 parameters)**
 
-The memory saving of DBNN as compared to neural networks implemented using backpropagation can be understood from the figure below.
+So, the number of trainable parameters in DBNN is much less as compared to neural networks implemented using backpropagation. This can be seen from the figure below.
 
 ![](dbnn_parameters.png)
 
