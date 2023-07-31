@@ -32,6 +32,9 @@ see that the number of parameters for this layer combination is:
 
 Thus, the memory saving is in the order of __m*(n-2)__ for each pair of layers
 in the network.
+
+![](dbnn_parameters.png)
+
 We have used Normal distribution for the purpose of our study. However, the
 model can easily be scaled to new distributions and breakpoint search schemes.
 
