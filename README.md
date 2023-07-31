@@ -68,9 +68,13 @@ While implementing your neural network, the Linear class from dbnn-linear.py can
 
 ### Build the PyTorch model using the functional API of DBNN.
 input_layer = Linear(input_size, hidden_size)
+
 act_layer = torch.nn.Tanh()
+
 dense_layer = Linear(hidden_size, num_classes)
+
 output_layer = torch.nn.Softmax(2)
+
 
 Here Linear(..) will automatically call DBNN Linear class instead of pytorch Linear class.
 
