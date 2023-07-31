@@ -73,7 +73,7 @@ act_layer = torch.nn.Tanh()
 
 dense_layer = Linear(hidden_size, num_classes)
 
-output_layer = torch.nn.Softmax(2)
+output_layer = torch.nn.Softmax(1)
 
 
 Here Linear(..) will automatically call DBNN Linear class instead of pytorch Linear class.
