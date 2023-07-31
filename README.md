@@ -30,8 +30,7 @@ see that the number of parameters for this layer combination is:
 
 **DBNN: m ∗ 2 (for a distribution with 2 parameters)**
 
-Thus, the memory saving is in the order of __m*(n-2)__ for each pair of layers
-in the network.
+The memory saving of DBNN as compared to neural networks implemented using backpropagation can be understood from the figure below.
 
 ![](dbnn_parameters.png)
 
